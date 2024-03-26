@@ -1,0 +1,64 @@
+---
+import logo from "../../assets/icons/logo.svg";
+---
+
+<header class="fixed top-0 w-full shadow-md bg-white">
+  <div class="container mx-auto">
+    <nav>
+      <div class="flex gap-[587px] py-[17px] border-b border-b-[#3333331A]">
+        <div class="flex items-center gap-[20px]">
+          <ul class="flex gap-[12px]">
+            <li><i class="bi bi-geo-alt text-[#333333B3]"></i></li>
+            <span>
+              <li class="text-[#333333B3]">Наш адрес:</li>
+              <li class="text-[#333333B3]">г. Бишкек, ул. Ляляля 69</li>
+            </span>
+          </ul>
+
+          <ul>
+            <li
+              class="border-[1px] border-[#3333331A] rotate-[-90.00deg] w-[50px]"
+            >
+            </li>
+          </ul>
+
+          <ul class="flex gap-[12px]">
+            <li><i class="bi bi-clock-fill text-[#333333B3]"></i></li>
+            <span>
+              <li class="text-[#333333B3]">График работы:</li>
+              <li class="text-[#333333B3]">С 8:00 до 22:00 без выходных</li>
+            </span>
+          </ul>
+        </div>
+
+        <ul class="flex gap-[7px]">
+          <li><i class="bi bi-telephone-fill text-[#333333B3]"></i></li>
+          <span>
+            <li class="text-[#333333B3]">+7 (708) 51 51 518</li>
+            <li class="text-[#333333B3]">+7 (700) 51 51 518</li>
+          </span>
+        </ul>
+      </div>
+
+      <div class="py-[18px] flex justify-between items-center">
+        <div>
+          <img src={logo.src} alt="logo" />
+        </div>
+        <div>
+          <ul class="flex gap-[46px] items-center text-[#333333] font-medium">
+            <li>Это мы</li>
+            <li>Почему мы?</li>
+            <li>А вот поэтому</li>
+            <li>Контакты</li>
+          </ul>
+        </div>
+        <div>
+          <button
+            class="font-semibold text-[16px] px-[23px] py-[10px] rounded-[5px] bg-[#4762FF] hover:bg-[#4763ffa5] text-white"
+            >Заказать звонок</button
+          >
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

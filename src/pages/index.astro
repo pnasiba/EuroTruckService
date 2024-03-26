@@ -1,16 +1,33 @@
 ---
-
+import Header from "../components/UI/header.astro";
+import truck from "../assets/images/truck.png";
+import spare from "../assets/images/spare.png";
+import car from "../assets/images/car.png";
+import accessory from "../assets/images/accessory.png";
+import oil from "../assets/images/oil.png";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Header />
+
+    
+  </body>
 </html>
+
+<style>
+  main {
+    min-height: calc(100vh - 70px - 0px);
+  }
+</style>
