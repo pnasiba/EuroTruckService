@@ -12,6 +12,7 @@ import scania from "../assets/icons/scania.svg";
 import volvo from "../assets/icons/volvo.svg";
 import pagination from "../assets/icons/pagination.svg";
 import photo from "../assets/images/photo.png";
+import truckDriver from "../assets/images/truckdriver.png";
 
 const data = [1, 2, 3, 4];
 ---
@@ -256,6 +257,46 @@ const data = [1, 2, 3, 4];
             </div>
             <div class="flex justify-center">
               <img src={pagination.src} alt="pagination" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        style="background-image: url('../assets/images/truckdriver.png')"
+        class="bg-cover bg-center bg-slate-400"
+      >
+        <div class="container mx-auto">
+          <div class="flex justify-between">
+            <span></span>
+            <div class="py-[70px]">
+              <div
+                class="bg-white rounded-[15px] w-[611px] px-[35px] py-[39px]"
+              >
+                <h1
+                  class="text-[56px] mb-[16px] font-bold w-[540px] leading-[68px]"
+                >
+                  Остались вопросы?
+                </h1>
+                <p class="text-[18px] mb-[35px] text-[#333333CC] w-[467px]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  odio in et, lectus sit lorem id integer.
+                </p>
+                <input
+                  type="text"
+                  placeholder="Имя"
+                  class="bg-[#4762FF14] block mb-[23px] py-[18px] rounded-[8px] w-full px-[22px]"
+                />
+                <input
+                  type="tel"
+                  placeholder="Номер телефона"
+                  class="bg-[#4762FF14] block mb-[37px] py-[18px] rounded-[8px] w-full px-[22px] outline-none focus:outline-none"
+                />
+                <button
+                  class="py-[22px] w-full bg-[#4762FF] rounded-[8px] text-white text-[18px] outline-none focus:outline-none font-semibold hover:bg-[#4763ffa5]"
+                  >Отправить</button
+                >
+              </div>
             </div>
           </div>
         </div>
