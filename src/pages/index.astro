@@ -1,10 +1,17 @@
 ---
-import Header from "../components/UI/header.astro";
+import Header from "../components/header.astro";
 import truck from "../assets/images/truck.png";
 import spare from "../assets/images/spare.png";
 import car from "../assets/images/car.png";
 import accessory from "../assets/images/accessory.png";
 import oil from "../assets/images/oil.png";
+import daf from "../assets/icons/daf.svg";
+import man from "../assets/icons/man.svg";
+import renault from "../assets/icons/renault.svg";
+import scania from "../assets/icons/scania.svg";
+import volvo from "../assets/icons/volvo.svg";
+
+const data = [1, 2, 3, 4];
 ---
 
 <html lang="en">
@@ -52,7 +59,7 @@ import oil from "../assets/images/oil.png";
 
       <section>
         <div class="container mx-auto">
-          <div class="pt-[29px] bg-slate-300 pb-[58px]">
+          <div class="pt-[29px] pb-[58px]">
             <h1
               class="font-bold text-[#333333] text-[40px] mb-[18px] text-center"
             >
@@ -150,14 +157,51 @@ import oil from "../assets/images/oil.png";
                   </p>
                 </div>
                 <div class="relative right-[5px] top-[75px]">
-                  <img
-                    src={oil.src}
-                    alt="spare"
-                    class="h-[174px]"
-                  />
+                  <img src={oil.src} alt="spare" class="h-[174px]" />
                 </div>
               </div>
-			  
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mx-auto">
+          <div class="py-[70px] flex justify-around gap-[70px]">
+            <div>
+              <h1
+                class="mb-[16px] w-[540px] font-bold text-[48px] text-[#333333] leading-[58px]"
+              >
+                У вас вопрос кто мы а кто мы блин
+              </h1>
+
+              <span>
+                <p class="w-[480px] mb-[10px] text-[#333333CC]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  odio in et, lectus sit lorem id integer.
+                </p>
+                <p class="w-[480px] mb-[10px] text-[#333333CC]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  odio in et, lectus sit lorem id integer.
+                </p>
+                <p class="w-[480px] text-[#333333CC]">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  odio in et, lectus sit lorem id integer.
+                </p>
+              </span>
+            </div>
+            <div>
+              <div class="flex gap-[160px] mb-[50px]">
+                <img src={scania.src} alt="scania" />
+                <img src={volvo.src} alt="volvo" />
+              </div>
+              <div class="mx-auto w-[130px] mb-[31px]">
+                <img src={man.src} alt="man" />
+              </div>
+              <div class="flex gap-[147px]">
+                <img src={daf.src} alt="daf" />
+                <img src={renault.src} alt="daf" />
+              </div>
             </div>
           </div>
         </div>
